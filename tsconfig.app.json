@@ -24,15 +24,12 @@
 
     "baseUrl": ".",
     "paths": {
-      "@store/*": ["src/store/*"],
-      "@generated": ["src/api/generated"],
-      "@ui/*": ["src/ui/*"],
-      "@components/*": ["src/components/*"],
+      "@app/*": ["src/app/*"],
+      "@domain/*": ["src/domain/*"],
+      "@features/*": ["src/features/*"],
       "@pages/*": ["src/pages/*"],
-      "@modules/*": ["src/modules/*"],
-      "@utils/*": ["src/utils/*"],
       "@constants/*": ["src/constants/*"],
-      "@hooks/*": ["src/hooks/*"]
+      "@shared/*": ["src/shared/*"]
     }
   },
   "include": ["src"]

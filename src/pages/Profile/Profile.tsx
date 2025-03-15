@@ -1,4 +1,4 @@
-import { UserAvatar } from "../../features/user/ui/Avatar.tsx";
+import { UserAvatar } from "@features/user/ui/Avatar.tsx";
 
 export const Profile = () => {
   return <UserAvatar />;

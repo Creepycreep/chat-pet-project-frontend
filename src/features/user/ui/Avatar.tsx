@@ -1,7 +1,7 @@
 import { Avatar } from "@mui/material";
 
-export const UserAvatar = ({ name = "Mary" }: { name: string }) => {
-  function stringToColor(string: string) {
+export const UserAvatar = ({ name = "Mary" }: { name?: string }) => {
+  const stringToColor = (string: string) => {
     let hash = 0;
     let i;
 
@@ -19,7 +19,7 @@ export const UserAvatar = ({ name = "Mary" }: { name: string }) => {
     /* eslint-enable no-bitwise */
 
     return color;
-  }
+  };
 
   return (
     <Avatar
