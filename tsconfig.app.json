@@ -22,7 +22,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "baseUrl": ".",
+    "base": ".",
     "paths": {
       "@app/*": ["src/app/*"],
       "@domain/*": ["src/domain/*"],
