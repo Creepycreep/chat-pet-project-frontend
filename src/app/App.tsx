@@ -1,6 +1,14 @@
 import './App.css'
-import { Profile } from '@pages/Profile/Profile.tsx'
+import { RoutePage } from '@pages/RoutePage.tsx'
+import { WithAppProviders } from '@app/providers/WithAppProviders.tsx'
+import { Layout } from '../layout/Layout.tsx'
 
 export function App() {
-  return <Profile />
+  return (
+    <WithAppProviders>
+      <Layout>
+        <RoutePage />
+      </Layout>
+    </WithAppProviders>
+  )
 }
