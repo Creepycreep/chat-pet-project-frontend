@@ -1,3 +1,3 @@
 export const ChatsPage = () => {
-  return <></>
+  return <div>Chats</div>
 }

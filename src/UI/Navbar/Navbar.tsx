@@ -9,7 +9,9 @@ export const Navbar = () => {
     <>
       <NavLink
         to={ROUTES.FRIENDS.PATH}
-        style={{ display: 'flex', alignItems: 'center', gap: '5px' }}
+        style={({ isActive }) =>({
+          display: 'flex', alignItems: 'center', gap: '5px', color: isActive? "#9adcfb" : "white"
+        })}
       >
         <ChatIcon />
         <Typography
@@ -22,7 +24,9 @@ export const Navbar = () => {
       </NavLink>
       <NavLink
         to={ROUTES.CHATS.PATH}
-        style={{ display: 'flex', alignItems: 'center', gap: '5px' }}
+        style={({ isActive }) =>({
+          display: 'flex', alignItems: 'center', gap: '5px', color: isActive? "#9adcfb" : "white"
+        })}
       >
         <PeopleAltIcon />
         <Typography
